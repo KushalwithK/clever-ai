@@ -11,7 +11,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 app.use(express.json());
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["http://localhost:5173", 'https://ai.cleverstudio.in', 'cleverstudio.in'],
   methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
   credentials: true,
 };
